@@ -7,10 +7,22 @@ package dev.graciano.javafeatures;
  * <li>Scope </li>
  */
 public class PatternMatching {
+  String name = "Rodrigo";
 
-  private void oldPattern(Object obj){
-    if(obj instanceof String){
+  void oldPattern(Object obj) {
+    if (obj instanceof String ) {
       String name = (String) obj;
+      System.out.println(name.toLowerCase());
+    } else {
+      System.out.println(name);
+    }
+  }
+
+  void newPattern(Object obj) {
+    if (!(obj instanceof String name)) {
+      System.out.println(name.toLowerCase());
+    } else {
+      System.out.println(name);
     }
   }
 }

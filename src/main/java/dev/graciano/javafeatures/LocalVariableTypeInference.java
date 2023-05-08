@@ -1,13 +1,20 @@
 package dev.graciano.javafeatures;
 
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class LocalVariableTypeInference {
 
-  public void usingVar() {
-    var name = "BNY";
-    var citiesLivedIn = Map.of("Neha", List.of("Bangalore", "Copenhagen", "Mumbai", "Delhi", "London", "New York"));
+  //-var
+  public void oldVar() {
+    String name = "BNY Mellon";
+    Set<String> citiesLivedIn =
+      Set.of("São Paulo", "Rio de Janeiro", "Porto Alegre", "New Jersey", "New York");
   }
 
+  public void usingVar() {
+
+    var name = "BNY Mellon";
+    var citiesLivedIn =
+      Set.of("São Paulo", "Rio de Janeiro", "Porto Alegre", "New Jersey", "New York");
+  }
 }

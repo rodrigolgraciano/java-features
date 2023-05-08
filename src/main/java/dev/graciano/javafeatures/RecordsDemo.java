@@ -7,5 +7,9 @@ package dev.graciano.javafeatures;
  * <li>Instance variables</li>
  */
 public class RecordsDemo {
-  Car car = new Car("Ford", 2018);
+
+  public static void main(String[] args) {
+    Car car = new Car("Mazda CX-5", 2023);
+    System.out.println(car);
+  }
 }
